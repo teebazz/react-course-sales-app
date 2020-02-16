@@ -16,7 +16,7 @@ export class CourseSales extends Component {
         const {total} = this.state;    
         return (
             <div>
-                <h1>You can Buy courses here:</h1>
+                <h1>You can Buy courses here and pick:</h1>
                 {this.props.items.map((course) =>
                     <div id="courses">                    
                         <Course name={course.name} price={course.price}   sumPrice={this.sumPrice} active={course.active} id={course.id} clickMain={this.props.clickMain} key={course.id}/>
